@@ -1,0 +1,23 @@
+import random
+
+number = random.randint(1,5)
+
+answer_count = 0
+
+while answer_count < 5:
+
+    guess = int(input("Please enter a number: "))
+    if guess == number:
+        print ("You are correct, the answer is {0}".format(guess))
+    elif guess > number:
+        print("The number is too high")
+        answer = answer_count + 1
+    elif guess < number:
+        print ("The number is too low")
+        answer = answer_count + 1
+else:
+    print("The correct answer is {0}".format(number))
+
+
+
+
